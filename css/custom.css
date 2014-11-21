@@ -1,1 +1,5 @@
 /* You can include your custom styling here */
+.navbar-default .navbar-nav>li>a:hover{
+  color: orange;
+}
+

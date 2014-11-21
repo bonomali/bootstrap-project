@@ -23,31 +23,50 @@
   <body>
     <!-- Natvigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <!-- Natvigation bar fluid taking the whole screen -->
       <div class="container-fluid">
+        <!-- TNW Icon -->
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar">What</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
           <a class="navbar-brand" href="#">
             <img src="images/logo/tnw-logo.svg" alt="" width="auto" height="100%">
           </a>
         </div>
+        <!-- Nav Bar left header -->
+        <div>
+          <ul class="nav navbar-nav navbar-left hidden-xs hidden-sm">
+            <li><a href="#" class="top-button">BLOG</a></li>
+            <li><a href="#" class="top-button">CONFERENCE</a></li>
+            <li><a href="#" class="top-button">DEALS</a></li>
+            <li><a href="#" class="top-button">PRO</a></li>
+          </ul>
+        </div>
+        <!-- Nav Bar right header -->
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">Dashboard</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Profile</a></li>
-            <li><a href="#">Help</a></li>
+            <!-- Drop down X -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="hidden-md hidden-lg">FOLLOW</span><span class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <li><a href="#">Action</a></li>
+                 <li><a href="#">Another action</a></li>
+                 <li><a href="#">Something else here</a></li>
+                 <li class="divider"></li>
+                 <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+            <!-- Add Log in Icon -->
+            <li><a class="glyphicon glyphicon-user"></a></li>
             <!-- Added the Bootstrap Search Icon -->
             <li><a class="glyphicon glyphicon-search"></a></li>
+            <!-- Search bar -->
+            <li>
+                <form class="navbar-form">
+                  <input type="text" class="form-control" placeholder="Search...">
+                </form>
+            </li>
           </ul>
-          <form class="navbar-form navbar-right">
-            <input type="text" class="form-control" placeholder="Search...">
-          </form>
         </div>
+
       </div>
     </nav>
     <!-- The Whole Frame Work -->
