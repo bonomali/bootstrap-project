@@ -11,7 +11,7 @@
 
     <title>The Next Web</title>
 
-    <link href="http://getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet">
 
     <link href="http://getbootstrap.com/examples/dashboard/dashboard.css" rel="stylesheet">
 
@@ -21,13 +21,13 @@
   </head>
 
   <body>
-
+    <!-- Natvigation Bar -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar">What</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
@@ -41,6 +41,8 @@
             <li><a href="#">Settings</a></li>
             <li><a href="#">Profile</a></li>
             <li><a href="#">Help</a></li>
+            <!-- Added the Bootstrap Search Icon -->
+            <li><a class="glyphicon glyphicon-search"></a></li>
           </ul>
           <form class="navbar-form navbar-right">
             <input type="text" class="form-control" placeholder="Search...">
@@ -48,15 +50,33 @@
         </div>
       </div>
     </nav>
-
+    <!-- The Whole Frame Work -->
     <div class="container-fluid">
       <div class="row">
-        <div class="col-sm-3 col-md-2 sidebar">
+        <!-- SIDE BAR Left Hand Side -->
+        <div class="col-lg-3 sidebar visible-lg">
           <ul class="nav nav-sidebar">
             <li class="active"><a href="#">Overview <span class="sr-only">(current)</span></a></li>
             <li><a href="#">Reports</a></li>
             <li><a href="#">Analytics</a></li>
-            <li><a href="#">Export</a></li>
+            <li><a href="#">Export</a></li> 
+            <li>
+              <div>
+                <article class="sidebar-content">
+                <img src="images/sidebar/FireShot.png" class="img-responsive">
+                <time class="article-time"> TIME </time>
+                <title class="article-title"> AWESOME Title </title>
+                </article>
+              </div>
+              <div>
+                <article class="sidebar-content">
+                <img src="images/sidebar/Beauty.png" class="img-responsive">
+                <time class="article-time"> TIME </time>
+                <title class="article-title"> AWESOME Title </title>
+                </article>
+              </div>
+            </li>
+
           </ul>
           <ul class="nav nav-sidebar">
             <li><a href="">Nav item</a></li>
@@ -71,8 +91,50 @@
             <li><a href="">Another nav item</a></li>
           </ul>
         </div>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-          <h1>News Content</h1>
+        <!-- Main Content -->
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-lg-offset-3">
+          <!-- Responsive way of adding paddings around the main content -->
+          <div class="col-xs-10 col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 main">
+            <!-- Feature Article -->
+            <div class="col-xs-12 col-sm-8 col-md-9 col-lg-8">
+              <article class="main-article">
+              <img src="images/main/Adidas.png" class="img-responsive">
+              <h1 class="main-title">Main News Title</h1>
+              <time class="article-time"> time and date </time>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <a href="">Keep Reading... </a>
+              </p>
+              </article>
+            </div>
+            <!-- Right side content of the Main Content -->
+            <div class="col-xs-12 col-sm-4 col-md-3 col-lg-4">
+              <article class="side-article">
+                <img src="images/main/Read.jpg" class="img-responsive">
+                <h2 class="side-title">Side Bar title</h2>
+                <time class="article-time">Today's date - 12:15am </time>
+                <p class="article-title"> Article TItle </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+              </article>
+              <article class="side-article">
+                <img src="images/main/Man.jpg" class="img-responsive">
+                <h2 class="side-title">Side Bar title</h2>
+                <time class="article-time">Today's date - 12:15am </time>
+                <p class="article-title">Article TItle</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+              </article>
+              <article class="side-article">
+                <img src="images/main/Adidas.png" class="img-responsive">
+                <h2 class="side-title">Side Bar title</h2>
+                <time class="article-time">Today's date - 12:15am </time>
+                <p class="article-title">Article TItle</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod </p>
+              </article>
+            </div>
+          </div>
         </div>
       </div>
     </div>
