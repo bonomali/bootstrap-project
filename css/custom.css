@@ -1,5 +1,69 @@
 /* You can include your custom styling here */
 .navbar-default .navbar-nav>li>a:hover{
   color: orange;
+
 }
 
+.sidebar {
+  background-color: white;
+  /*border-bottom: solid blue; */
+}
+
+.navbar {
+  background-color: white;
+  border-bottom: 2px solid rgba(217,224,226,0.4);
+}
+
+.sidebar-content {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-column {
+  padding: 5px;
+  font-size: 12px;
+  border-bottom: 2px solid rgba(217,224,226,0.4);
+}
+
+.article-title {
+  color: orange;
+  font-size: 20px;
+}
+
+.main {
+  border: 2px solid rgba(217,224,226,0.4);
+  padding-top: 80px;
+}
+.sidebar-picture {
+  margin: 0;
+  padding-right: 0;
+}
+
+time {
+  color: gray;
+  font-size: 12px; 
+}
+
+@media(max-width:767px){
+  .re-font .h2{
+    font-size: 80%;
+  }
+}
+
+@media(min-width:768px){
+  .re-font .h2 {
+    font-size: 85%;
+  }
+}
+
+@media(min-width:992px){
+  .re-font .h2 {
+    font-size: 90%;
+  }
+}
+
+@media(min-width:1200px){
+  .re-font .h2 {
+    font-size: 100%;
+  }
+}
